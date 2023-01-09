@@ -146,3 +146,27 @@ def verifica_as_retas_da_rainha(tabuleiro, posicao):
         if tabuleiro[linha][coluna] == 1:
             return False
     return True
+
+def verificar_se_o_tabuleiro_e_solucao(entrada):
+    '''
+    Esta função recebe uma entrada ( string com uma sequencia de zeros
+    e uns separados a cada 8 algorismo por um espaço ) que representa um
+    tabuleiro de xadrez.Em seguida a função cria uma matriz que representa
+    esse tabuleiro, em seguida verifica se tem 8 rainhas e 64 posições e por fim
+    verifica se as rainhas não estão nas diagonais e retas umas das outras.Caso o
+    tabuleiro tenha menos ou mais de 64 posições, a entrada é invalida e a
+    função retorna -1.Caso uma rainha esteja na reta ou diagonal de outra,
+    a entrada não é um caso de 8 rainhas e retorna 0. Caso a entrada não caia
+    nos casos anteriores ela é uma entrada solução e retorna 1.
+
+    '''
+    tabuleiro = posiciona_rainhas_no_tabuleiro(entrada)
+    if (verifica_se_o_tabalueiro_tem_64_posicoes(tabuleiro) and
+        verifica_se_o_tabuleiro_tem_8_rainhas(tabuleiro)):
+        for posicao_rainha in pega_as_posicoes_das_rainhas(tabuleiro):
+            if (verifica_as_diagonais_da_rainha(tabuleiro, posicao_rainha) and
+                verifica_as_retas_da_rainha(tabuleiro, posicao_rainha)):
+                return 1
+            return 0
+    else:
+        return -1

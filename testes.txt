@@ -7,3 +7,7 @@ se a função esta criando a matriz que representa a entrada de forma correta, v
 Teste 2 (testa_pega_as_posicoes_das_rainhas_corretamente) => O teste em questão foi realizado com objetivo
 de averiguar se a função esta pegando as posições corretas da rainhas que estão presentes no tabuleiro,
 uma vez que essas posições serão essenciais para analisar as diagonais e retas das rainhas.
+
+Teste 3 (testa_se_tabuleiro_tem_8_rainhas) => O teste em questão foi realizado com objetivo de conferir se a
+função esta averiguando a presença das 8 rainhas no tabuleiro, uma vez que é necessario essa quantidade
+especifica de rainhas para ser uma possivel solução do caso das Rainhas.

@@ -57,3 +57,51 @@ def verifica_se_o_tabalueiro_tem_64_posicoes(tabuleiro):
                 return False
         return True
     return False
+
+def verifica_as_diagonais_da_rainha(tabuleiro, posicao):
+    '''
+    Esta função recebe uma matriz que representa um tabuleiro de xadrez,
+    bem como a posição de uma rainha.Em seguida a função verifica se existe
+    outras rainhas na diagonais da posição dessa rainha, caso exista uma rainha
+    em alguma diagonal a função retorna False, caso contrario retorna True.
+    '''
+    linha = posicao[0]
+    coluna = posicao[1]
+
+    # superior esquerda
+    while(linha != 0 and coluna != 0):
+        linha -= 1
+        coluna -= 1
+        if tabuleiro[linha][coluna] == 1:
+            return False
+
+    linha = posicao[0]
+    coluna = posicao[1]
+
+    # superior direita
+    while(linha !=0 and coluna != 7):
+        linha -= 1
+        coluna += 1
+        if tabuleiro[linha][coluna] == 1:
+            return False
+
+    linha = posicao[0]
+    coluna = posicao[1]
+
+    # inferior esquerda
+    while(linha != 7 and coluna != 0):
+        linha += 1
+        coluna -= 1
+        if tabuleiro[linha][coluna] == 1:
+            return False
+
+    linha = posicao[0]
+    coluna = posicao[1]
+
+    # inferior direita
+    while(linha != 7 and coluna != 7):
+        linha += 1
+        coluna += 1
+        if tabuleiro[linha][coluna] == 1:
+            return False
+    return True

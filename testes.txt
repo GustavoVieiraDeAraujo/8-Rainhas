@@ -1,0 +1,5 @@
+Justificativa de Cada Teste
+
+Teste 1 (testa_montagem_tabuleiro_corretamentee) => O teste em questão foi realizado para verificar
+se a função esta criando a matriz que representa a entrada de forma correta, visto que essa matriz 
+é de suma importancia para fazer as analises posteriores sobre a entrada.

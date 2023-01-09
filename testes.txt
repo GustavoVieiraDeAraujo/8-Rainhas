@@ -3,3 +3,7 @@ Justificativa de Cada Teste
 Teste 1 (testa_montagem_tabuleiro_corretamentee) => O teste em questão foi realizado para verificar
 se a função esta criando a matriz que representa a entrada de forma correta, visto que essa matriz 
 é de suma importancia para fazer as analises posteriores sobre a entrada.
+
+Teste 2 (testa_pega_as_posicoes_das_rainhas_corretamente) => O teste em questão foi realizado com objetivo
+de averiguar se a função esta pegando as posições corretas da rainhas que estão presentes no tabuleiro,
+uma vez que essas posições serão essenciais para analisar as diagonais e retas das rainhas.

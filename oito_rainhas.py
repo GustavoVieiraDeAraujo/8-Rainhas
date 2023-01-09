@@ -42,3 +42,18 @@ def verifica_se_o_tabuleiro_tem_8_rainhas(tabuleiro):
     if contador == 8:
         return True
     return False
+
+def verifica_se_o_tabalueiro_tem_64_posicoes(tabuleiro):
+    '''
+    Esta função recebe uma matriz que representa um tabuleiro de xadrez.
+    Primeiro a função verifica se o tabuleiro tem 8 linhas, após isso ela
+    verifica se cada linha tem 8 elementos.Caso o tabuleiro não tenha 8
+    linha ou 8 elementos em todas as linhas ela retorna false, caso contrario
+    ela retorna true.
+    '''
+    if len(tabuleiro) == 8:
+        for linha in tabuleiro:
+            if len(linha) != 8:
+                return False
+        return True
+    return False

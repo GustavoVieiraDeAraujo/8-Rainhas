@@ -15,3 +15,7 @@ especifica de rainhas para ser uma possivel solução do caso das Rainhas.
 Teste 4 (testa_se_tabuleiro_tem_64_posicoes) => O teste em questão foi realizado para verificar
 se a função esta averiguando a veriracidade do tabuleiro, uma vez que ele é de suma importancia para 
 as analise futuras.
+
+Teste 5 (testa_se_as_diagonais_da_rainha_escolhida_nao_tem_outras_rainhas) => O teste em questão foi realizado 
+para verificar se a função esta checando as diagonais da rainha escolhida, a fim de atestar a ausencia de outras 
+rainhas nelas.

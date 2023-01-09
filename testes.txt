@@ -19,3 +19,7 @@ as analise futuras.
 Teste 5 (testa_se_as_diagonais_da_rainha_escolhida_nao_tem_outras_rainhas) => O teste em questão foi realizado 
 para verificar se a função esta checando as diagonais da rainha escolhida, a fim de atestar a ausencia de outras 
 rainhas nelas.
+
+Teste 6 (testa_se_as_retas_da_rainha_escolhida_nao_tem_outras_rainhas) => O teste em questão foi realizado 
+para verificar se a função esta checando as retas da rainha escolhida, a fim de atestar a ausencia de outras 
+rainhas nelas.

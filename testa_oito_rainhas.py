@@ -7,6 +7,7 @@ from oito_rainhas import pega_as_posicoes_das_rainhas
 from oito_rainhas import verifica_se_o_tabuleiro_tem_8_rainhas
 from oito_rainhas import verifica_se_o_tabalueiro_tem_64_posicoes
 from oito_rainhas import verifica_as_diagonais_da_rainha
+from oito_rainhas import verifica_as_retas_da_rainha
 
 def testa_montagem_tabuleiro_corretamente():
     '''
@@ -96,3 +97,21 @@ def testa_se_as_diagonais_da_rainha_escolhida_nao_tem_outras_rainhas():
     entrada2 = [2,3]
     saida_esperada = True
     assert verifica_as_diagonais_da_rainha(entrada1, entrada2) == saida_esperada
+
+def testa_se_as_retas_da_rainha_escolhida_nao_tem_outras_rainhas():
+    '''
+    Esta função testa se a função verifica_as_retas_da_rainha
+    esta retornando True quando não tem rainhas nas retas da posição
+    da escolhida.
+    '''
+    entrada1 = [[0, 0, 0, 0, 1, 0, 0, 0],
+               [0, 1, 0, 0, 0, 0, 0, 0],
+               [0, 0, 0, 1, 0, 0, 0, 0],
+               [0, 0, 0, 0, 0, 0, 1, 0],
+               [0, 0, 1, 0, 0, 0, 0, 0],
+               [0, 0, 0, 0, 0, 0, 0, 1],
+               [0, 0, 0, 0, 0, 1, 0, 0],
+               [1, 0, 0, 0, 0, 0, 0, 0]]
+    entrada2 = [2,3]
+    saida_esperada = True
+    assert verifica_as_retas_da_rainha(entrada1, entrada2) == saida_esperada

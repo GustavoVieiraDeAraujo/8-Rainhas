@@ -5,6 +5,7 @@ Funções de teste das funções de implementação do caso da 8 rainhas.
 from oito_rainhas import posiciona_rainhas_no_tabuleiro
 from oito_rainhas import pega_as_posicoes_das_rainhas
 from oito_rainhas import verifica_se_o_tabuleiro_tem_8_rainhas
+from oito_rainhas import verifica_se_o_tabalueiro_tem_64_posicoes
 
 def testa_montagem_tabuleiro_corretamente():
     '''
@@ -59,3 +60,20 @@ def testa_se_tabuleiro_tem_8_rainhas():
     saida_esperada = True
 
     assert verifica_se_o_tabuleiro_tem_8_rainhas(entrada) == saida_esperada
+
+def testa_se_tabuleiro_tem_64_posicoes():
+    '''
+    Esta função testa se a função verifica_se_o_tabalueiro_tem_64_posicoes
+    esta retornando True quando o tabuleiro tem 64 posições.
+    '''
+
+    entrada = [[0, 0, 0, 0, 1, 0, 0, 0],
+               [0, 1, 0, 0, 0, 0, 0, 0],
+               [0, 0, 0, 1, 0, 0, 0, 0],
+               [0, 0, 0, 0, 0, 0, 1, 0],
+               [0, 0, 1, 0, 0, 0, 0, 0],
+               [0, 0, 0, 0, 0, 0, 0, 1],
+               [0, 0, 0, 0, 0, 1, 0, 0],
+               [1, 0, 0, 0, 0, 0, 0, 0]]
+    saida_esperada = True
+    assert verifica_se_o_tabalueiro_tem_64_posicoes(entrada) == saida_esperada

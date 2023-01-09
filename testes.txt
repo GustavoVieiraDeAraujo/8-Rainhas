@@ -11,3 +11,7 @@ uma vez que essas posições serão essenciais para analisar as diagonais e reta
 Teste 3 (testa_se_tabuleiro_tem_8_rainhas) => O teste em questão foi realizado com objetivo de conferir se a
 função esta averiguando a presença das 8 rainhas no tabuleiro, uma vez que é necessario essa quantidade
 especifica de rainhas para ser uma possivel solução do caso das Rainhas.
+
+Teste 4 (testa_se_tabuleiro_tem_64_posicoes) => O teste em questão foi realizado para verificar
+se a função esta averiguando a veriracidade do tabuleiro, uma vez que ele é de suma importancia para 
+as analise futuras.

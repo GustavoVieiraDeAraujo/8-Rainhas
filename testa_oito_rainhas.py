@@ -8,6 +8,7 @@ from oito_rainhas import verifica_se_o_tabuleiro_tem_8_rainhas
 from oito_rainhas import verifica_se_o_tabalueiro_tem_64_posicoes
 from oito_rainhas import verifica_as_diagonais_da_rainha
 from oito_rainhas import verifica_as_retas_da_rainha
+from oito_rainhas import verificar_se_o_tabuleiro_e_solucao
 
 def testa_montagem_tabuleiro_corretamente():
     '''
@@ -115,3 +116,13 @@ def testa_se_as_retas_da_rainha_escolhida_nao_tem_outras_rainhas():
     entrada2 = [2,3]
     saida_esperada = True
     assert verifica_as_retas_da_rainha(entrada1, entrada2) == saida_esperada
+
+def testa_se_tabuleiro_e_solucao():
+    '''
+    Esta função testa se a função verificar_se_o_tabuleiro_e_solucao
+    esta retornando 1 quando a entrada escolhida é uma solução para
+    o caso das 8 rainhas.
+    '''
+    entrada = "00001000 01000000 00010000 00000010 00100000 00000001 00000100 10000000"
+    saida_esperada = 1
+    assert verificar_se_o_tabuleiro_e_solucao(entrada) == saida_esperada

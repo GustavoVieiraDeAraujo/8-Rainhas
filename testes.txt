@@ -23,3 +23,6 @@ rainhas nelas.
 Teste 6 (testa_se_as_retas_da_rainha_escolhida_nao_tem_outras_rainhas) => O teste em questão foi realizado 
 para verificar se a função esta checando as retas da rainha escolhida, a fim de atestar a ausencia de outras 
 rainhas nelas.
+
+Teste 7 (testa_se_tabuleiro_e_solucao) => O teste em questão foi realizado para verificar se a função esta 
+averiguando um caso de 8 rainhas para entrada utilizada.
